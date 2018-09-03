@@ -13,24 +13,42 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\Managers">
+      <UniqueIdentifier>{6c559344-c7bd-4d7e-a0ad-ae9301e90ddd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Managers">
+      <UniqueIdentifier>{49b1fa6b-f13d-4ad9-a098-0009073d81cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\System">
+      <UniqueIdentifier>{0a61eef0-a9a2-4870-931a-05c602ac9521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\System">
+      <UniqueIdentifier>{82809e87-0b71-449c-b57b-075a0ba508b3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Entity.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="EntityManager.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Исходные файлы\System</Filter>
+    </ClCompile>
+    <ClCompile Include="ECS.cpp">
+      <Filter>Исходные файлы\System</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Entity.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="EntityManager.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Файлы заголовков\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Файлы заголовков\System</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS.h">
+      <Filter>Файлы заголовков\System</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

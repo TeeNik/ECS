@@ -2,14 +2,21 @@
 #include <iostream>
 
 
-Entity::Entity(int ID = -1)
+
+int Entity::id = 0;
+
+Entity::Entity()
 {
-	EntityID = ID;
+	++id;
+	EntityID = id;
 	std::cout << "Entity: " << EntityID << " created\n";
 }
-
 
 Entity::~Entity()
 {
 	std::cout << "Entity: " << EntityID << " destroyed\n";
+	if (EntityID == 10)
+	{
+
+	}
 }
