@@ -1,11 +1,11 @@
 #include <cstdlib> 
-#include "Entity.h"
+#include "ECS.h"
 
 int main()
 {
 	for (int i = 0; i < 10; ++i)
 	{
-		Entity e;
+		ECS::Instance().GetEntityManager()->SpawnEntity();
 	}
 	system("pause");
 }

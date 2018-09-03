@@ -12,6 +12,6 @@ public:
 	EntityManager();
 	~EntityManager();
 	
-	static Entity* SpawnEntity();
+	Entity* SpawnEntity();
 };
 
