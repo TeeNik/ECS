@@ -13,14 +13,14 @@ EntityManager::~EntityManager()
 	auto itr = EntityContainer.begin();
 	while (itr != EntityContainer.end())
 	{
-		delete itr->second;
+		itr->second.reset();
 		++itr;
 	}
 }
 
-Entity* EntityManager::SpawnEntity()
+std::shared_ptr<Entity> EntityManager::SpawnEntity()
 {
-	Entity* entity = new Entity();
+	std::shared_ptr<Entity> entity = std::make_shared<Entity>();
 	EntityContainer[entity->GetEntityID()] = entity;
 	return entity;
 }

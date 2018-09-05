@@ -11,7 +11,7 @@ public:
 		return ecs;
 	}
 
-	inline EntityManager* GetEntityManager() const { return EntityMan; }
+	inline std::unique_ptr<EntityManager>& GetEntityManager() { return EntityMan; }
 
 private:
 	ECS();

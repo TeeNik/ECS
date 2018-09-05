@@ -17,6 +17,6 @@ Entity::~Entity()
 	std::cout << "Entity: " << EntityID << " destroyed\n";
 	if (EntityID == 10)
 	{
-
+		std::cout << "Entity: " << EntityID << " destroyed\n";
 	}
 }

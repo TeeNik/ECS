@@ -2,11 +2,11 @@
 
 ECS::ECS()
 {
-	EntityMan = new EntityManager();
+	EntityMan = std::make_unique<EntityManager>();
 }
 
 
 ECS::~ECS()
 {
-	delete EntityMan;
+	//delete EntityMan;
 }
