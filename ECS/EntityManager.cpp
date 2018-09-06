@@ -3,7 +3,6 @@
 
 EntityManager::EntityManager()
 {
-	//EntityID = 0;
 }
 
 
